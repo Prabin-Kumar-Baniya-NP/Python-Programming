@@ -93,5 +93,22 @@ print('b' in l1)  # Prints False
 """
 Python identity Operator: is, is not
 """
-print(2 is 2)       # Prints True
-print(3 is not 2)   # Prints True
+print(True is False)       # Prints False
+print(True is not False)   # Prints True
+# **********************************************************************************************************************
+"""
+Bitwise operator: Bitwise AND, Or, XOR, left-shift, right-shift and Bitwise 1's Compliment 
+"""
+# Bitwise AND
+print(4 & 8)  # Prints 0
+# Bitwise OR
+print(6 | 1)  # Prints 7
+# Bitwise XOR
+print(6 ^ 6)  # Prints 0
+# Bitwise 1's Compliment
+print(~45)  # Prints -46
+# Bitwise Left- Shifting
+print(2 << 1)  # Prints 4
+# Bitwise Right-Shifting
+print(31 >> 1)  # Prints 15
+# **********************************************************************************************************************
