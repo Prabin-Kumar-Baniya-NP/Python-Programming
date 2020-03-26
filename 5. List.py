@@ -37,7 +37,8 @@ del l1
 l2.remove('a')
 # Using Index number
 del l3[1]
-l3.pop(1)
+l3.pop(0)
+print(l4.pop(0))
 # **********************************************************************************************************************
 """
 Adding extra elements in the list 
