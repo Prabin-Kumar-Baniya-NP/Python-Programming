@@ -42,7 +42,7 @@ del empty_dict  # Deleting entire dictionary
 del d1[5]  # Deleting the specific item of the dictionary
 # **********************************************************************************************************************
 """
-In-Built Functions of Dictionary
+In-Built Functions of Dictionary- len, any, all, sorted
 """
 # len()
 print(len(d1))
@@ -60,7 +60,7 @@ print(sorted(d8))  # Prints ['a','b','c']
 print(type(sorted(d7)))  # Prints class 'list'
 # **********************************************************************************************************************
 """
-In-Built methods for Python Dictionary
+In-Built methods for Python Dictionary- keys,values, items,get, clear, copy, pop, update
 """
 # Keys()- It returns the keys of the entire dictionary
 print(d1.keys())    # Prints dict_keys([1, 2, 3, 4, 6])
