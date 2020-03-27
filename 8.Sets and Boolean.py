@@ -117,3 +117,36 @@ Operations on Set
 """
 # Membership:
 print('p' in {'a', 'p', 'p', 'l', 'e'})
+# **********************************************************************************************************************
+# **********************************************************************************************************************
+# **********************************************************************************************************************
+"""
+Python Boolean
+"""
+a = True
+b = False
+a1 = 'True'
+b1 = 'False'
+print(type(a))  # Prints <class 'bool'>
+print(type(a1))  # Prints <class 'str'>
+print(type(b))  # Prints <class 'bool'>
+print(type(b1))  # Prints <class 'str'>
+# **********************************************************************************************************************
+print(bool('abcd'))  # Prints True
+print(bool())  # Prints False
+print(bool([]))  # Prints False
+print(bool(0))  # Prints False
+print(bool(1))  # Prints True
+print(bool(2))  # Prints True
+print(bool(0.00000000000001))  # Prints True
+print(bool(''))  # Prints False
+print(bool(' '))  # Prints True
+print(True + False)  # Prints 1 because 1 + 0 = 1
+print(True + True)  # Prints 2 because 1 + 1 = 2
+print(False + False)  # Prints 0 because 0 + 0 = 0
+print(False - True)  # Prints -1 because 0 - 1 = -1
+print(False / True)  # Prints 0.0
+print(True % True)  # Modulus operation
+print(True ** True)  # Exponential Operation
+print(True > False)  # Prints True
+print(True is False)  # Prints False
