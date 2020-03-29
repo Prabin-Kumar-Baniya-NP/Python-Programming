@@ -58,7 +58,7 @@ print((1.1 + 2.2) == 3.3)  # Prints false because its not 3.3 but its 3.30000000
 """
 Maths Module
 """
-import math
+import math  # Should be written at the top
 
 print(math.factorial(5))
 print(math.exp(4))
