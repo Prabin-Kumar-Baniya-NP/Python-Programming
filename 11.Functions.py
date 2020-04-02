@@ -91,3 +91,22 @@ def unlimited(*x):
 n = int(input("Enter how many digits from 0, you want to print"))
 for i in range(n):
     unlimited(i)
+# **********************************************************************************************************************
+"""
+Python Lambda expression: Its same like python function but it consists of only one expression (statement)
+"""
+sum=lambda a,b: a+b
+average=lambda c,d,e: (c+d+e)/3
+print("Sum of 2 and 3 is",sum(2,3))
+print("Average of 5,6,7 is",average(5,6,7))
+# **********************************************************************************************************************
+"""
+Recursive Function
+"""
+def factotial(n):
+    if n == 1:
+        return 1
+    return n * factotial(n - 1)
+
+f=factotial(4)
+print(f"Factorial of 4 is {f}")
