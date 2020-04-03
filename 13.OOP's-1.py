@@ -32,14 +32,12 @@ class information:
         self.address = address
         self.age = age
 
-    def display_info(self):
-        print(f"Student name is {self.name}; address is {self.address}; and age is {self.age}")
+    def get_info(self):
+        return (f"Student name is {self.name}; address is {self.address}; and age is {self.age}")
 
 
 ram = information("Ram", "Delhi", 15)
 shyam = information("Shyam", "Kathmandu", 16)
-print(ram.display_info())
-print(shyam.display_info())
-
-
-
+print(ram.get_info())
+print(shyam.get_info())
+# **********************************************************************************************************************
