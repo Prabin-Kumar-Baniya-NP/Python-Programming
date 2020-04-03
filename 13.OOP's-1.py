@@ -56,3 +56,50 @@ class Compute:
 
 digits = Compute(3, 2, 1)
 print(digits.operation())
+
+
+# **********************************************************************************************************************
+# Example 4 : Changing the objects
+class Just_Change:
+    def __init__(self):
+        self.name = "Prabin"
+        self.age = 19
+        self.location = "Butwal"
+
+
+x = Just_Change()
+y = Just_Change()
+print(x.name)  # Prints Prabin
+print(y.name)  # Prints Prabin
+y.name = "Kumar"
+print(y.name)  # Prints Kumar
+print(x.name)  # Prints Prabin
+
+
+# **********************************************************************************************************************
+#  Example 5: Comparing two objects
+class Value:
+    def __init__(self):
+        self.x = 50
+        self.y = 60
+
+    def compare(self, other):
+        if (self.x == other.x):
+            return True
+        else:
+            return False
+
+
+a = Value()
+b = Value()
+if a.compare(b) == True:
+    print("They are same")  # This line is executed
+else:
+    print("They are different")
+# Changing the value of x for object b and then executing the same thing
+b.x = 70
+if a.compare(b) == True:
+    print("They are same")
+else:
+    print("They are different")  # This line is executed
+# **********************************************************************************************************************
