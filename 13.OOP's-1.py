@@ -6,6 +6,9 @@ Object is the instance of class
 
 # Example 1:
 class operation:
+    def __init__(self):
+        print("It contains different mathematical concepts")
+
     def addition(self, x, y):
         return x + y
 
@@ -19,3 +22,24 @@ add = operation()
 minus = operation()
 print("Sum of a and b is", add.addition(a, b))
 print("Difference of a and b is", minus.substraction(a, b))
+
+
+# **********************************************************************************************************************
+# Example 2
+class information:
+    def __init__(self, name, address, age):
+        self.name = name
+        self.address = address
+        self.age = age
+
+    def display_info(self):
+        print(f"Student name is {self.name}; address is {self.address}; and age is {self.age}")
+
+
+ram = information("Ram", "Delhi", 15)
+shyam = information("Shyam", "Kathmandu", 16)
+print(ram.display_info())
+print(shyam.display_info())
+
+
+
