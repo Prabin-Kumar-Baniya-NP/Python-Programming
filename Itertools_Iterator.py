@@ -86,3 +86,23 @@ Output:
 ['apple', 'banana', 'mango']
 ['apple', 'banana', 'mango']
 """
+# Creating our own Iterator
+class My_range:
+    def __init__(self,start,end):
+        self.value = start
+        self.end = end
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if self.value >= self.end:
+            raise StopIteration
+        else:
+            current = self.value
+            self.value += 1
+            return current
+
+obj1 = My_range(5,15)
+print(next(obj1))  # 5
+print(next(obj1))  # 6
+print(next(obj1))  # 7
+print(next(obj1))  # 8
