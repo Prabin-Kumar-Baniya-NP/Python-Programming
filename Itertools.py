@@ -1,6 +1,8 @@
 from itertools import count, cycle, repeat
 # Iterable
+# Checking whether list is iterable or not
 list1 = [1,2,3,4,5,6,7]
+print(dir(list1))  # Prints many magic methods in which there is __iter__
 numbers = iter(list1)
 print(next(numbers))
 print(next(numbers))
